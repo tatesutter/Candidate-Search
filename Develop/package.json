@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@types/node": "^22.10.5",
+    "express": "^4.21.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
@@ -26,6 +27,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
-  }
+    "vite": "^5.2.0",
+    "@types/bun": "latest"
+  },
+  "module": "index.js"
 }
