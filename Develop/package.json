@@ -1,13 +1,22 @@
 {
   "name": "13-challenge",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "repository": {
+    "type": "git",
+    "url": "Candidate-Search"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "server.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
     "@types/node": "^22.10.5",
@@ -29,6 +38,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "@types/bun": "latest"
-  },
-  "module": "index.js"
+  }
 }
