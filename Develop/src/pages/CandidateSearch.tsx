@@ -53,7 +53,7 @@ const CandidateSearch: React.FC = () => {
       company: selectedCandidate.company || 'Freelancer',
       bio: selectedCandidate.bio || 'No bio available.',
     };
-    if (savedCandidates.some((candidate: any) => candidate.id === selectedCandidate.id)) {
+    if (savedCandidates.some((candidate: { id: number }) => candidate.id === selectedCandidate.id)) {
       alert('This candidate is already saved.');
       return;
     }
