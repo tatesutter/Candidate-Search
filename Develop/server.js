@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Use environment variable or default to 5000
+const PORT = process.env.PORT || 10000; // Use environment variable or default to 5000
 
 // Middleware to parse JSON (for API endpoints)
 app.use(express.json());
