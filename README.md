@@ -1,33 +1,82 @@
-# React + TypeScript + Vite
+# GitHub Candidate Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+GitHub Candidate Search is a web application built with React, TypeScript, and Vite. It allows users to search for GitHub profiles based on specific criteria, making it useful for recruiters and hiring managers looking for potential candidates with relevant skills.
 
-Currently, two official plugins are available:
+## Features
+- Search GitHub users by username
+- Filter results by repositories, followers, and location
+- View detailed user profiles including bio, repositories, and contributions
+- Responsive design for seamless usage across devices
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Tailwind CSS
+- **API**: GitHub REST API
+- **State Management**: React Context API
 
-## Expanding the ESLint configuration
+## Installation
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [Git](https://git-scm.com/)
 
-* Configure the top-level `parserOptions` property as follows:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Clone the Repository
+```sh
+git clone https://github.com/your-username/github-candidate-search.git
+cd github-candidate-search
 ```
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+### Install Dependencies
+```sh
+npm install
+```
+
+### Environment Variables
+Create a `.env` file in the root directory and add your GitHub API token:
+```env
+VITE_GITHUB_ACCESS_TOKEN=your_github_token_here
+```
+
+### Run the Application
+```sh
+npm run dev
+```
+
+## Deployment
+To build the project for production:
+```sh
+npm run build
+```
+
+To preview the production build:
+```sh
+npm run preview
+```
+
+## Usage
+1. Enter a GitHub username or keyword in the search bar.
+2. Apply filters if needed.
+3. Click on a user to view their profile and repositories.
+
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes and commit (`git commit -m 'Add feature'`).
+4. Push to your branch (`git push origin feature-name`).
+5. Open a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+For any inquiries, feel free to reach out:
+- **Email**: your.email@example.com
+- **GitHub**: [your-username](https://github.com/your-username)
 
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+Happy coding! 🚀
+
